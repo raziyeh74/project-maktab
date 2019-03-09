@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .modal {
+        display:block;
+  }
+    </style>
+</head>
+<body>
+<!-- Button to Open the Modal -->
+<!--
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+-->
+
+<!-- The Modal -->
+<div class="modal fade show" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+ 
+      <div class="container">
+  <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#SIGNUP">SIGN UP</a>
+            </li>
+          </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    
+    <div id="SIGNUP" class="container tab-pane active"><br>
+      <div class="d-flex flex-row">
+        <img src="signup-image.jpg" class="rounded col-5" alt="signup">
+
+  
+    <form action="/signup" class="col-7 " method="post">
+     <div class="input-group mb-3 input-group-sm">
+        <input type="text" class="form-control" placeholder="Firstname" name="firstName">
+      </div>
+     <div class="input-group mb-3 input-group-sm">
+        <input type="text" class="form-control" placeholder="Lastname" name="lastName">
+      </div>
+     <div class="input-group mb-3 input-group-sm">
+        <input type="text" class="form-control" placeholder="Username" name="username">
+      </div>
+     <div class="input-group mb-3 input-group-sm">
+        <input type="password" id="myInput" class="form-control col-11" placeholder="Password" name="password">
+        <input type="checkbox" onclick="password()" class="col-1">Show Password
+      </div>
+     <div class="input-group mb-3 input-group-sm">
+        <input type="password" class="form-control" placeholder="Confirm Password" name="ConfirmPassword">
+      </div>
+     <div class="input-group mb-3 input-group-sm">
+        <input type="text" class="form-control" placeholder="Mobile Number" value="+98" name="MobileNumber">
+
+      </div>
+     <select name="Gender" class="custom-select custom-select-sm col-3">
+        <option selected>Gender</option>
+        <option value="volvo">Female</option>
+        <option value="fiat">Male</option>
+      </select>
+     <button type="submit" class="btn btn-primary">SIGNUP</button>
+
+    
+    </form>
+     </div>
+   
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+      
+      
+      
+      
+      
+      
+    </div>
+    
+  </div>
+</div>
+
+      <!-- Modal body -->
+
+  
+    </div> 
+  </div>
+</div>
+<script>
+function password() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+    </script>
+</body>
+</html>

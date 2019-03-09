@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .modal {
+    display:block;
+  }
+    </style>
+</head>
+<body>
+<!-- Button to Open the Modal -->
+<!--
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+-->
+
+<!-- The Modal -->
+<div class="modal fade show" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+ 
+      <div class="container">
+  <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#LOGIN">LOGIN</a>
+            </li>
+          </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="LOGIN" class="container tab-pane active"><br>
+      <div class="d-flex flex-row">
+        <img src="signin-image.jpg" class="rounded col-5" alt="signin">
+<!-- hh -->
+  
+       <form action="/login" class="col-7 " method="post">
+          <div class="form-group ">
+            <label >Username:</label>
+            <input type="text" class="form-control" id="" name="username">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <div>
+            <a href="/signup">haven't account</a>
+          </div>
+          
+
+       </form>
+
+     </div>
+   
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+      <!-- Modal body -->
+
+  
+    </div> 
+  </div>
+</div>
+
+</body>
+</html>
